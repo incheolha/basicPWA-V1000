@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Toelf Lists!
+  </h1>
+
+  <div *ngIf="this.toeflLists.length > 0">
+    <div *ngFor="let toefl of toeflLists">
+      <p>{{ toefl.toeflNo }}</p>
+      <p>{{ toefl.toeflLevel }}</p>
+    </div>
+  </div>
+
